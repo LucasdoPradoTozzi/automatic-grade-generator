@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('module_hours', function (Blueprint $table) {
             $table->id();
-            $table->foreignId(Module::class);
+            $table->foreignIdFor(Module::class);
             $table->tinyInteger('week_day')->comment('0 is sunday, keep going until saturday..');
             $table->time('hour_start');
             $table->time('hour_end');
