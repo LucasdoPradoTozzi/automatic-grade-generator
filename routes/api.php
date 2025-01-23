@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get("/test-api", [TestController::class, "test"]);
+Route::post("/test-generator", [TestController::class, "test"]);

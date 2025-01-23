@@ -30,7 +30,7 @@ class Module extends Model
 
     public function moduleHours(): HasMany
     {
-        return $this->hasMany(ModuleHours::class);
+        return $this->hasMany(ModuleHours::class, 'module_id');
     }
 
     public function equivalences(): HasMany
